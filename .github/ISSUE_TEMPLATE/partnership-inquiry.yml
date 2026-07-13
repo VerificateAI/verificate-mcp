@@ -1,0 +1,59 @@
+name: Partnership inquiry
+description: Cursor / IDE vendor / enterprise partnership with Verificate MCP
+title: "[Partnership] "
+labels: ["partnership"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request a partnership or extended evaluation for Verificate MCP.
+        Evaluation keys: https://verificate.ai/mcp
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization
+      placeholder: e.g. Cursor, Acme Corp Engineering
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Inquiry type
+      options:
+        - IDE / platform partnership (e.g. Cursor integration)
+        - Enterprise production licensing
+        - Extended technical evaluation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+    validations:
+      required: true
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: What are you trying to evaluate or integrate?
+      description: e.g. pre-apply validation in Agent mode, MCP directory listing, enterprise audit
+    validations:
+      required: true
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline / urgency
+      placeholder: Optional
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand Verificate MCP is a commercial service; this repo does not include proprietary gate source
+          required: true

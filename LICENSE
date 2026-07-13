@@ -1,0 +1,26 @@
+Verificate MCP Partner Documentation License
+
+Copyright (c) 2026 Verificate. All rights reserved.
+
+Permission is granted to partners and evaluators to use, copy, and distribute
+the documentation, examples, and configuration templates in this repository
+solely for the purpose of:
+
+  (a) evaluating the Verificate MCP service,
+  (b) integrating with Verificate via the published MCP API, and
+  (c) partnership discussions with Verificate.
+
+RESTRICTIONS
+
+  - The Verificate protection engine, gate implementations, and related
+    proprietary software are NOT licensed by this document.
+  - Live API access requires a separate key and agreement from Verificate.
+  - You may not use this repository to create a competing validation service
+    by replicating proprietary gate behavior documented only at a high level.
+  - Trademarks (Verificate, CORTEX, etc.) may not be used without permission
+    except to refer to the Verificate service accurately.
+
+THE DOCUMENTATION IN THIS REPOSITORY IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND. SEE COMMERCIAL.md FOR SERVICE TERMS.
+
+For commercial licensing: https://verificate.ai/mcp

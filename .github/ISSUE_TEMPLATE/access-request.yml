@@ -1,0 +1,42 @@
+name: MCP access request
+description: Request or renew a Verificate MCP evaluation key
+title: "[Access] "
+labels: ["access"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For self-service 30-day keys, use **https://verificate.ai/mcp** first.
+        Use this form if you need manual provisioning or renewal.
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization / team name
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+    validations:
+      required: true
+
+  - type: dropdown
+    id: use
+    attributes:
+      label: Intended use
+      options:
+        - Personal evaluation
+        - Team pilot (under 10 users)
+        - CI integration evaluation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      placeholder: Optional — existing key ID, renewal reason, etc.

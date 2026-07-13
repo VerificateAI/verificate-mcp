@@ -1,0 +1,17 @@
+# Local overrides — never commit real keys
+mcp.json
+.cursor/mcp.json
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# Python (if partners extend smoke tests locally)
+__pycache__/
+.venv/
+*.pyc
