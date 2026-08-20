@@ -1,5 +1,8 @@
 # Verificate MCP — Enterprise AI Code Validation
 
+[![Verificate Gate](https://img.shields.io/badge/gated%20by-Verificate%20Gate-2ea44f?logo=shield&logoColor=white)](https://github.com/VerificateAI/verificate-gate-action)
+
+
 **Real-time validation for AI-generated code and plans.**  
 Deterministic protection gates + independent AI assessment, exposed as a native [Model Context Protocol (MCP)](https://modelcontextprotocol.io) HTTP server.
 
