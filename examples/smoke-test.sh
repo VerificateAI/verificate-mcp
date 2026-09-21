@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-BASE_URL="${VERIFICATE_MCP_URL:-https://verificate-portal-verificate-granite-4-small.apps.gpu4.fusion.isys.hpc.dc.uq.edu.au/mcp}"
+BASE_URL="${VERIFICATE_MCP_URL:-https://mcp.verificate.ai/mcp}"
 KEY="${VERIFICATE_MCP_KEY:-}"
 
 if [[ -z "$KEY" ]]; then

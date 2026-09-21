@@ -15,7 +15,7 @@ This guide covers Cursor and other MCP clients. No local install is required —
 {
   "mcpServers": {
     "verificate": {
-      "url": "https://verificate-portal-verificate-granite-4-small.apps.gpu4.fusion.isys.hpc.dc.uq.edu.au/mcp",
+      "url": "https://mcp.verificate.ai/mcp",
       "transport": "http",
       "headers": {
         "Authorization": "Bearer YOUR_TRIAL_TOKEN"

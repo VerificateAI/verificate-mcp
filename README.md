@@ -47,7 +47,7 @@ Copy [`examples/mcp.json.example`](examples/mcp.json.example) into your Cursor M
 {
   "mcpServers": {
     "verificate": {
-      "url": "https://verificate-portal-verificate-granite-4-small.apps.gpu4.fusion.isys.hpc.dc.uq.edu.au/mcp",
+      "url": "https://mcp.verificate.ai/mcp",
       "transport": "http",
       "headers": {
         "Authorization": "Bearer YOUR_TRIAL_TOKEN"
@@ -126,7 +126,7 @@ To schedule a technical evaluation: [open a partnership issue](.github/ISSUE_TEM
 
 | | |
 |---|---|
-| **MCP URL** | `https://verificate-portal-verificate-granite-4-small.apps.gpu4.fusion.isys.hpc.dc.uq.edu.au/mcp` |
+| **MCP URL** | `https://mcp.verificate.ai/mcp` |
 | **Protocol** | MCP over HTTP (JSON-RPC 2.0, spec 2024-11-05) |
 | **Auth** | Bearer token from [verificate.ai/mcp](https://verificate.ai/mcp) dashboard |
 | **Status** | Production (OpenShift, UQ GPU4 HPC cluster) |
