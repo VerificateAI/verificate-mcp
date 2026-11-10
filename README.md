@@ -1,10 +1,12 @@
 # Verificate MCP — Enterprise AI Code Validation
 
+> **Looking to install it?** The maintained entry point is **[verificate-mcp-quickstart](https://github.com/VerificateAI/verificate-mcp-quickstart)**: one-line setup for Claude Code, Cursor, VS Code and any MCP client, 100 free validations with no signup. This repository is the partner and integration guide.
+
 [![Verificate Gate](https://img.shields.io/badge/gated%20by-Verificate%20Gate-2ea44f?logo=shield&logoColor=white)](https://github.com/VerificateAI/verificate-gate-action)
 
 
 **Real-time validation for AI-generated code and plans.**  
-Deterministic protection gates + independent AI assessment, exposed as a native [Model Context Protocol (MCP)](https://modelcontextprotocol.io) HTTP server.
+Deterministic veto checks + a Claude Haiku 5.5 review, exposed as a native [Model Context Protocol (MCP)](https://modelcontextprotocol.io) HTTP server.
 
 > **This repository is a technical sales and integration guide.**  
 > It documents how to connect, evaluate, and partner with Verificate.  
@@ -89,7 +91,7 @@ Partners evaluate Verificate through the **MCP contract** — the same surface C
 | Real code approval | Submit complete implementations; observe `valid: true` with enterprise assessment |
 | Plan validation | Call `validate_plan` on an architecture proposal |
 | Response structure | Documented in [docs/TOOLS.md](docs/TOOLS.md) with example payloads |
-| Live service | Hosted endpoint (OpenShift, UQ HPC) — no local install required |
+| Live service | Hosted endpoint — no local install required |
 
 The deterministic gates are **authoritative**: a gate veto fails the submission regardless of LLM score. That guarantee is observable in every API response under `protection.vetoed` and `protection.vetoed_by`.
 
@@ -128,10 +130,10 @@ To schedule a technical evaluation: [open a partnership issue](.github/ISSUE_TEM
 |---|---|
 | **MCP URL** | `https://mcp.verificate.ai/mcp` |
 | **Protocol** | MCP over HTTP (JSON-RPC 2.0, spec 2024-11-05) |
-| **Auth** | Bearer token from [verificate.ai/mcp](https://verificate.ai/mcp) dashboard |
-| **Status** | Production (OpenShift, UQ GPU4 HPC cluster) |
+| **Auth** | None needed to start (100 free validations per machine); optional Bearer token from [verificate.ai/auth/signup](https://verificate.ai/auth/signup) for your own quota |
+| **Status** | Production (hosted) |
 
-Unauthenticated requests receive: `Missing MCP key. Get a 30-day key at verificate.ai/mcp.`
+Requests without a token use the free tier (100 validations per machine). After that, sign up for a 30-day trial (no card) to get a token.
 
 ---
 

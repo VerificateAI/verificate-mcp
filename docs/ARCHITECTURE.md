@@ -12,7 +12,7 @@ High-level design for partners evaluating Verificate MCP. **Gate algorithms, pat
                            │ MCP HTTP (JSON-RPC)
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Verificate MCP Server (hosted, OpenShift)                   │
+│  Verificate MCP Server (hosted)                             │
 │  ┌─────────────────────────────────────────────────────┐    │
 │  │  Layer 1: Deterministic Protection Gates (AUTHORITATIVE)│    │
 │  │  • Code reality / completeness                         │    │
@@ -71,7 +71,7 @@ Tool schemas: [TOOLS.md](TOOLS.md)
 
 | Attribute | Value |
 |-----------|-------|
-| Hosting | OpenShift on UQ GPU4 HPC cluster |
+| Hosting | Hosted service (cloud) |
 | Transport | HTTPS MCP (HTTP JSON-RPC) |
 | Auth | Bearer MCP key per organization |
 | Availability | Production; multi-replica MCP with durable audit sidecar |
