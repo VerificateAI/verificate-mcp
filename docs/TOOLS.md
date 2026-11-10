@@ -4,7 +4,7 @@ Public API contract for the Verificate MCP server. Tool names and schemas are st
 
 ## Transport
 
-- **URL:** `POST https://verificate-portal-verificate-granite-4-small.apps.gpu4.fusion.isys.hpc.dc.uq.edu.au/mcp`
+- **URL:** `POST https://mcp.verificate.ai/mcp`
 - **Auth:** `Authorization: Bearer <MCP_KEY>`
 - **Body:** JSON-RPC 2.0
 

@@ -15,7 +15,7 @@ This guide covers Cursor and other MCP clients. No local install is required —
 {
   "mcpServers": {
     "verificate": {
-      "url": "https://verificate-portal-verificate-granite-4-small.apps.gpu4.fusion.isys.hpc.dc.uq.edu.au/mcp",
+      "url": "https://mcp.verificate.ai/mcp",
       "transport": "http",
       "headers": {
         "Authorization": "Bearer YOUR_TRIAL_TOKEN"
@@ -60,9 +60,9 @@ Add to your Cursor rules or AGENTS.md (see [`examples/agent-rules-snippet.md`](e
 
 | Response | Meaning |
 |----------|---------|
-| `Missing MCP key. Get a 30-day key at verificate.ai/mcp.` | No `Authorization` header |
+| Free-tier limit reached | 100 free validations used on this machine; sign up for a token at verificate.ai/auth/signup |
 | `401` / `403` | Invalid or expired key |
-| Connection timeout | Network/firewall; endpoint is on UQ HPC OpenShift |
+| Connection timeout | Network or firewall blocking https://mcp.verificate.ai |
 
 ## Endpoint reference
 
